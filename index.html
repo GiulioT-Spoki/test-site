@@ -34,9 +34,9 @@
             background-color: #dcdcdc; /* Grigio */
             flex-grow: 1; /* Flessibile per riempire lo spazio */
             display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            justify-content: flex-start; /* Allineamento in alto */
+            align-items: flex-start; /* Allineamento a sinistra */
+            flex-direction: column; /* Disporre gli elementi in colonna */
             padding: 20px;
         }
 
@@ -48,6 +48,16 @@
             padding: 1em 0;
         }
 
+        /* Aggiungere uno spazio tra le voci */
+        p {
+            margin-bottom: 10px;
+        }
+
+        /* Rendi i link di telefono ed email più evidenti */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -62,16 +72,10 @@
         <h2>Contatti</h2>
 
         <!-- Numero di Telefono -->
-        <p>
-            <strong>Telefono:</strong>
-            <a href="https://wa.me/+393349173929" target="_blank">+39 334 917 3929</a>
-        </p>
+        <p><strong>Telefono:</strong> <a href="https://wa.me/+393349173929" target="_blank">+39 334 917 3929</a></p>
 
         <!-- Email -->
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:giulio.trinchera@spoki.it">giulio.trinchera@spoki.it</a>
-        </p>
+        <p><strong>Email:</strong> <a href="mailto:giulio.trinchera@spoki.it">giulio.trinchera@spoki.it</a></p>
     </main>
 
     <!-- Footer -->
